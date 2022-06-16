@@ -1,0 +1,9 @@
+.GifModal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rebeccapurple;
+}
