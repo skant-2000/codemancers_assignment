@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      { !gifModalStatus && <Input />}
+      <Input />
       { gifModalStatus && <GifModal />}
     </div>
   );

@@ -6,7 +6,7 @@ import style from "../style/Input.module.css"
 
 export default function Input() {
 
-    const { setTextInput, gifModalStatus, setGifModalStatus } = useContext(AppContext)
+    const { setTextInput, setGifModalStatus } = useContext(AppContext)
 
   return (
     <div className={style.input}>
@@ -17,7 +17,7 @@ export default function Input() {
         <div>
             <div>Tag friends </div>
             <div>Check in</div>
-            <div onClick={() => setGifModalStatus(!gifModalStatus)}>GIF</div>
+            <div onClick={() => setGifModalStatus(true)}>GIF</div>
             <div>Tag events</div>
         </div>
         <div></div>
