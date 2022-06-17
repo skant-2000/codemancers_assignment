@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Codemancers Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Facebook like UI where user can post text and GIF's
 
-## Available Scripts
+## Demo
+- Initial UI will look like this
 
-In the project directory, you can run:
+![image](https://user-images.githubusercontent.com/76595835/174269299-505ca238-b6d3-4341-9c15-a10b5a36f4ec.png)
 
-### `npm start`
+- User can Write message in the text field
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://user-images.githubusercontent.com/76595835/174269636-73253b10-2441-4d26-9477-382fce46aa45.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- On click of GIF button a modal will open where user can search and select any GIF
 
-### `npm test`
+![image](https://user-images.githubusercontent.com/76595835/174271244-77da3a87-9488-4c9a-b056-35ed3d5bd7d5.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- After selecting a GIF, the GIF will appear just below the text box
 
-### `npm run build`
+![image](https://user-images.githubusercontent.com/76595835/174270540-4dec8025-9a81-4439-95d0-7335255a32b8.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- On click of the post button a new post will be created
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://user-images.githubusercontent.com/76595835/174270812-fe56cdcf-f4d2-4714-aaf5-5d6089727b74.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Deployed Link
 
-### `npm run eject`
+- Link https://codemancersassignment.netlify.app/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Steps to install it on your local device
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- clone this repo
+- inside VS Code terminal go to the folder
+- type npm install in the terminal
+- then type npm start
+- now it's running on your local device
