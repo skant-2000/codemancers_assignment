@@ -5,7 +5,7 @@ import style from "../style/GifModal.module.css"
 
 export default function GifModal() {
 
-  const { setGifModalStatus } = useContext(AppContext)
+  const { setGifModalStatus, setSelectedGif } = useContext(AppContext)
 
   const [ gifSearch, setGifSearch ] = useState("trending")
 
@@ -19,6 +19,11 @@ export default function GifModal() {
     .then((data) => setGifs(data));
   }, [gifSearch])
 
+  const handleGifSelect = (item) => {
+    setSelectedGif(item.images.downsized.url)
+    setGifModalStatus(false)
+  }
+
   console.log(gifs)
 
   return (
@@ -31,7 +36,7 @@ export default function GifModal() {
         <div>
           { gifs ? (
               gifs.data.map((item) => (
-                <img key={item.id} src={item.images.downsized.url} alt={item.title} />
+                <img key={item.id} src={item.images.downsized.url} alt={item.title} onClick={() =>handleGifSelect(item)} />
               ))
           ) : null }
         </div>

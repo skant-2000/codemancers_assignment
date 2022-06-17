@@ -33,13 +33,19 @@
     color: rgb(225, 225, 225);
 }
 
-.input > div:nth-child(2) {
+.input > img:nth-child(2) {
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.box {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
 }
 
-.input > div:nth-child(2) > div {
+.box > div {
     width: 20%;
     font-size: 15px;
     padding: 7px 0;
@@ -48,28 +54,28 @@
     background-color: rgb(144, 144, 144);
 }
 
-.input > div:nth-child(2) > div:hover {
+.box > div:hover {
     cursor: pointer;
 }
 
-.input > div:nth-child(3) {
+.line {
     height: 1px;
     background-color: white;
 }
 
-.input > div:nth-child(4) {
+.btn {
     text-align: right;
     margin-top: 16px;
 }
 
-.input > div:nth-child(4) > button {
+.btn > button {
     width: 80px;
     padding: 7px 0;
     color: white;
     background-color: rgb(78, 115, 185);
 }
 
-.input > div:nth-child(4) > button:hover {
+.btn > button:hover {
     cursor: pointer;
     background-color: rgb(92, 127, 194);
 }
