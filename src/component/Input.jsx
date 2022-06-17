@@ -6,46 +6,39 @@ import style from "../style/Input.module.css"
 
 export default function Input() {
 
-    const { textInput, setTextInput, setGifModalStatus, selectedGif, posts, setPosts } = useContext(AppContext)
+    const { textInput, setTextInput, setGifModalStatus, selectedGif, setSelectedGif, posts, setPosts } = useContext(AppContext)
+
+    // Storing the created post...
 
     const handlePostBtnClick = () => {
-        if ( !textInput && !selectedGif ) {
-            alert("select a gif and write something")
-        }
-        else if ( !textInput ) {
-            alert("write something")
-        }
-        else if ( !selectedGif ) {
-            alert("select a gif")
-        }
-        else {
-            setPosts([
-                ...posts,
-                {
-                    date: new Date(),
-                    text: textInput,
-                    url: selectedGif
-                }
-            ])
-        }
+        setPosts([
+            ...posts,
+            {
+                date: new Date(),
+                text: textInput,
+                url: selectedGif
+            }
+        ])
+        setTextInput("")
+        setSelectedGif(null)
     }
 
   return (
     <div className={style.input}>
         <div>
             <img src={user} alt="" />
-            <textarea onChange={(e) => setTextInput(e.target.value)} placeholder='post something...'></textarea>
+            <textarea value={textInput} onChange={(e) => setTextInput(e.target.value)} placeholder='post something...'></textarea>
         </div>
         {selectedGif && <img src={selectedGif} alt="gif" />}
         <div className={style.box}>
-            <div>Tag friends </div>
-            <div>Check in</div>
-            <div onClick={() => setGifModalStatus(true)}>GIF</div>
-            <div>Tag events</div>
+            <button>Tag friends </button>
+            <button>Check in</button>
+            <button onClick={() => setGifModalStatus(true)}>GIF</button>
+            <button>Tag events</button>
         </div>
         <div className={style.line}></div>
         <div className={style.btn}>
-            <button onClick={handlePostBtnClick}>Post</button>
+            <button onClick={handlePostBtnClick} disabled={!textInput && !selectedGif} >Post</button>
         </div>
     </div>
   )

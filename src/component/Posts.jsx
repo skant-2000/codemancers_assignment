@@ -7,12 +7,11 @@ import style from "../style/Posts.module.css"
 export default function Posts() {
 
   const { posts } = useContext(AppContext)
-  console.log("posts", posts)
 
   return (
     <div className={style.posts}>
       {
-        posts.map((item) => <IndividualPost post={item} />)
+        posts.map((item) => <IndividualPost post={item} key={item.date} />)
       }
     </div>
   )

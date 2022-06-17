@@ -1,5 +1,5 @@
 .input {
-    border: 1px solid rgb(129, 129, 129);
+    border: 1px solid rgb(91, 91, 91);
     max-width: 700px;
     margin: 50px auto 0;
     padding: 10px;
@@ -45,22 +45,23 @@
     margin: 20px 0;
 }
 
-.box > div {
+.box > button {
     width: 20%;
     font-size: 15px;
     padding: 7px 0;
     border-radius: 5px;
     color: white;
-    background-color: rgb(144, 144, 144);
+    background-color: rgb(116, 116, 116);
 }
 
-.box > div:hover {
+.box > button:hover {
     cursor: pointer;
+    background-color: rgb(144, 144, 144);
 }
 
 .line {
     height: 1px;
-    background-color: white;
+    background-color: rgb(91, 91, 91);
 }
 
 .btn {

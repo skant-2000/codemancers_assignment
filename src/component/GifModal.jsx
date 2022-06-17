@@ -6,25 +6,25 @@ import style from "../style/GifModal.module.css"
 export default function GifModal() {
 
   const { setGifModalStatus, setSelectedGif } = useContext(AppContext)
-
   const [ gifSearch, setGifSearch ] = useState("trending")
-
   const [gifs, setGifs] = useState(null)
 
   const api_key = "rHNAO5PP5FNTDGxJ7ZxR764nbd878ikQ";
 
+  // Feching GIFS...
+
   useEffect(() => {
-    fetch(`https://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${gifSearch}&limit=10`)
+    fetch(`https://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${gifSearch}`)
     .then((res) => res.json())
     .then((data) => setGifs(data));
   }, [gifSearch])
+
+  // Storing selected GIF...
 
   const handleGifSelect = (item) => {
     setSelectedGif(item.images.downsized.url)
     setGifModalStatus(false)
   }
-
-  console.log(gifs)
 
   return (
     <div className={style.modalBackground}>

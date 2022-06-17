@@ -11,10 +11,6 @@ export default function AppContextProvider({children}) {
     const [selectedGif, setSelectedGif] = useState(null)
     const [posts, setPosts] = useState([])
 
-    // console.log(textInput)
-    // console.log(gifModalStatus)
-    console.log(posts)
-
   return (
     <AppContext.Provider value={{ textInput, setTextInput, gifModalStatus, setGifModalStatus, selectedGif, setSelectedGif, posts, setPosts }}>
         {children}
